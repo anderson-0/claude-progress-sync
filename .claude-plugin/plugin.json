@@ -1,0 +1,17 @@
+{
+  "name": "progress-sync",
+  "version": "1.0.0",
+  "description": "Crash-resilient progress tracking for Claude Code plans. Auto-syncs checkboxes, survives IDE crashes, coordinates multi-agent work. Never lose progress again.",
+  "author": {
+    "name": "ClaudeKit",
+    "url": "https://github.com/anthropics/claude-code"
+  },
+  "keywords": [
+    "progress",
+    "checkpoint",
+    "crash-recovery",
+    "plan-tracking",
+    "multi-agent"
+  ],
+  "license": "MIT"
+}
