@@ -1,11 +1,18 @@
 {
-  "name": "progress-sync-marketplace",
-  "description": "Progress Sync plugin marketplace",
+  "name": "anderson-0",
+  "owner": {
+    "name": "Anderson"
+  },
+  "metadata": {
+    "description": "Claude Code plugins by Anderson",
+    "homepage": "https://github.com/anderson-0/claude-progress-sync"
+  },
   "plugins": [
     {
       "name": "progress-sync",
-      "description": "Crash-resilient progress tracking for Claude Code plans. Auto-syncs checkboxes, survives IDE crashes, coordinates multi-agent work.",
-      "path": "."
+      "version": "1.0.0",
+      "source": ".",
+      "description": "Crash-resilient progress tracking for Claude Code plans. Auto-syncs checkboxes, survives IDE crashes, coordinates multi-agent work."
     }
   ]
 }
