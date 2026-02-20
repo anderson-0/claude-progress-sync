@@ -21,35 +21,17 @@ In Claude Code:
 
 ### Step 2: Install the Plugin
 
-Choose your installation scope:
-
-**Global (all projects):**
 ```
 /plugin install progress-sync@anderson-0
 ```
 
-**Project scope (shared with team via git):**
-```bash
-# From terminal:
-claude plugin install progress-sync@anderson-0 --scope project
-```
+### Step 3: Restart Claude Code
 
-**Local scope (just you, this repo only):**
-```bash
-# From terminal:
-claude plugin install progress-sync@anderson-0 --scope local
-```
-
-### Installation Scopes Explained
-
-| Scope | Location | Shared With |
-|-------|----------|-------------|
-| `user` (default) | `~/.claude/` | All your projects |
-| `project` | `.claude/settings.json` | Team via git |
-| `local` | `.claude/settings.local.json` | Just you, this repo |
+The plugin loads on startup, so restart your session after installing.
 
 ### Alternative: Development Mode (Single Session)
 
+For testing without installing:
 ```bash
 git clone https://github.com/anderson-0/claude-progress-sync.git
 claude --plugin-dir ./claude-progress-sync
