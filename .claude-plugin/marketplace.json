@@ -11,7 +11,7 @@
     {
       "name": "progress-sync",
       "version": "1.0.0",
-      "source": ".",
+      "source": "./",
       "description": "Crash-resilient progress tracking for Claude Code plans. Auto-syncs checkboxes, survives IDE crashes, coordinates multi-agent work."
     }
   ]
