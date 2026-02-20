@@ -1,0 +1,11 @@
+{
+  "name": "progress-sync-marketplace",
+  "description": "Progress Sync plugin marketplace",
+  "plugins": [
+    {
+      "name": "progress-sync",
+      "description": "Crash-resilient progress tracking for Claude Code plans. Auto-syncs checkboxes, survives IDE crashes, coordinates multi-agent work.",
+      "path": "."
+    }
+  ]
+}
