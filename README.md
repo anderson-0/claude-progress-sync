@@ -12,25 +12,53 @@ Crash-resilient progress tracking for Claude Code plans. Never lose progress aga
 
 ## Installation
 
-### Option 1: Via Marketplace (Recommended)
+### Step 1: Add the Marketplace
 
 In Claude Code:
 ```
 /plugin marketplace add anderson-0/claude-progress-sync
-/plugin install progress-sync@anderson-0/claude-progress-sync
 ```
 
-### Option 2: Development Mode (Single Session)
+### Step 2: Install the Plugin
 
+Choose your installation scope:
+
+**Global (all projects):**
+```
+/plugin install progress-sync@anderson-0
+```
+
+**Project scope (shared with team via git):**
 ```bash
-claude --plugin-dir /path/to/claude-progress-sync
+# From terminal:
+claude plugin install progress-sync@anderson-0 --scope project
 ```
 
-### Option 3: Clone for Development
+**Local scope (just you, this repo only):**
+```bash
+# From terminal:
+claude plugin install progress-sync@anderson-0 --scope local
+```
+
+### Installation Scopes Explained
+
+| Scope | Location | Shared With |
+|-------|----------|-------------|
+| `user` (default) | `~/.claude/` | All your projects |
+| `project` | `.claude/settings.json` | Team via git |
+| `local` | `.claude/settings.local.json` | Just you, this repo |
+
+### Alternative: Development Mode (Single Session)
 
 ```bash
 git clone https://github.com/anderson-0/claude-progress-sync.git
 claude --plugin-dir ./claude-progress-sync
+```
+
+### Uninstall
+
+```
+/plugin remove progress-sync@anderson-0
 ```
 
 ## Quick Start
