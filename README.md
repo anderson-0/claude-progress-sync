@@ -11,24 +11,15 @@ Crash-resilient progress tracking for Claude Code plans. Never lose progress aga
 - **Source of truth**: Plan.md checkboxes ARE the source of truth
 
 ## Installation
-
-### Option 1: Symlink (Recommended for development)
-
-```bash
-ln -s /path/to/progress-sync ~/.claude/plugins/progress-sync
-```
-
-### Option 2: Copy to plugins directory
-
-```bash
-cp -r progress-sync ~/.claude/plugins/
-```
-
-### Option 3: Clone from repo
-
+### Option 1
 ```bash
 cd ~/.claude/plugins
-git clone https://github.com/your-repo/progress-sync.git
+git clone [https://github.com/your-repo/progress-sync.git](https://github.com/anderson-0/claude-progress-sync.git)
+```
+
+### Option 2 - One liner
+```bash
+git clone https://github.com/anderson-0/claude-progress-sync.git ~/.claude/plugins/progress-sync
 ```
 
 ## Quick Start
